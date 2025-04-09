@@ -1,0 +1,55 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+/* 
+.divider {
+    width: 100%;
+    border-bottom: 1px dashed black;
+    margin: 20px 0;
+}
+*/ 
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education, .bio {
+    width: 100%;
+}
+
+/* .ascii-art {
+    width: 48%;
+    text-align: right;
+}
+
+section.ascii-art pre {
+    font-size: 12px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    overflow-x: auto;
+} */
