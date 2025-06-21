@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    #ascii-project {
+      position: absolute;
+      cursor: move;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Ximeng</h1>
-        <div class="divider"></div>
 
-        <h2>A creative designer</h2>
-        <div class="divider"></div>
+  <!-- 顶部导航栏 -->
+  <nav>
+    <a href="cv.html">CV</a>
+    <a href="projects.html">Projects</a>
+    <a href="info.html">Info</a>
+  </nav>
+ 
 
-        <div class="row">
-            <section class="education">
-                <p><strong>2024 UAL Creative Computing Institute</strong><br>
-                MSc Computing and Creative Industry</p>
+ <h1>Ximeng Wang</h1>
 
-                <p><strong>2022 Central University of Finance and Economics</strong><br>
-                BA Visual Communication Design</p>
+ 
+<!-- <div class="container">
+  <h1>王禧萌 XimengWang</h1>
+  <div class="divider"></div>
+  <h2>创意设计师</h2>
+  <div class="divider"></div>
 
-                <section class="bio">
-                    <p>I am a creative technologist and graphic designer currently studying for an MSc in Computing and Creative Industry at UAL. With a passion for blending technology and art, I bring a wealth of experience in creating innovative designs and interactive experiences. My inspiration stems from my zest for life — travel, music, and sports enrich my creativity, allowing me to craft pieces that communicate on a human level, where technology serves art, and art serves humanity.</p>
-                </section>
-            </section>
-          <!-- 
-            <section class="ascii-art">
-                <pre>
-                ***************************************
-                ***************************************
-                *************o/xiz|{,/1ctx*************
-                ************77L*```````*_1{j***********
-                **********?i```````````````FZ**********
-                **********l`````````````````7**********
-                **********x`````````````````L**********
-                **********m?i`````````````iz1**********
-                ************]x```````````\x{***********
-                ********?1w]c>```````````La{]}r********
-                ******jSF~```````````````````^xv>******
-                *****l1,```````````````````````*Sj*****
-                ****7t```````````````````````````v7****
-                ***uL`````````````````````````````t]***
-                </pre>
-            </section>
-            -->
-            <section class="ascii-art">
-                <pre>
-                2024
-            </section>
-        </div>
+  <div class="row">
+    <section class="education">
+      <p><strong>2025 UAL: CCI 伦敦艺术大学创意技术学院</strong><br>
+      MSc Computing and Creative Industry 计算与创意产业（一等学位）</p>
+      <p><strong>2022 CUFE 中央财经大学</strong><br>
+      BA 视觉传达设计</p>
+    </section>
+  </div>
 
-        <div class="divider"></div>
-    </div>
+  <div class="divider"></div>
+
+  <section class="bio">
+    <p>我是一名创意技术和平面设计师。我的研究领域主要关注于：互动体验设计、AI生成艺术、情感算法音乐、平面视觉设计。欢迎参观我的作品集～ </p>
+  </section>
+
+  <div class="divider"></div>
+</div> -->
+
+<div id="ascii-project" class="draggable">
+  <pre>
+       *       +
+'                          |
+    ()    .-.,="``"=.    - o -
+          '=/_       \     |
+       *   |  '=._    |
+            \     `=./`,        '
+         .   '=.__.=' `='      *
++                         +
+     O      *        '       .
+  </pre>
+</div>
+<div id="ascii-project-2" class="draggable">
+  <pre>
+
+                  _(_)_                          wWWWw   _                    _(_)_                          wWWWw   _                      _(_)_                          wWWWw   _
+      @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_      @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_        @@@@       (_)@(_)   vVVVv     _     @@@@  (___) _(_)_
+     @@()@@ wWWWw  (_)\    (___)   _(_)_  @@()@@   Y  (_)@(_)    @@()@@ wWWWw  (_)\    (___)   _(_)_  @@()@@   Y  (_)@(_)      @@()@@ wWWWw  (_)\    (___)   _(_)_  @@()@@   Y  (_)@(_)
+      @@@@  (___)     `|/    Y    (_)@(_)  @@@@   \|/   (_)\      @@@@  (___)     `|/    Y    (_)@(_)  @@@@   \|/   (_)\        @@@@  (___)     `|/    Y    (_)@(_)  @@@@   \|/   (_)\
+       /      Y       \|    \|/    /(_)    \|      |/      |       /      Y       \|    \|/    /(_)    \|      |/      |          /      Y       \|    \|/    /(_)    \|      |/      |
+    \ |     \ |/       | / \ | /  \|/       |/    \|      \|/    \ |     \ |/       | / \ | /  \|/       |/    \|      \|/      \ |     \ |/       | / \ | /  \|/       |/    \|      \|/
+    \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|//    \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|//    \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|//
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  </pre>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
+

@@ -1,12 +1,26 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+
     background-color: #fff;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 20vh;
     margin: 0;
+}
+
+/* 顶部导航栏样式 */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1400px;
+  text-align: left;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
 }
 
 .container {
@@ -26,13 +40,13 @@ h2 {
     text-align: right;
     margin-bottom: 20px;
 }
-/* 
+
 .divider {
     width: 100%;
     border-bottom: 1px dashed black;
     margin: 20px 0;
 }
-*/ 
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -40,6 +54,13 @@ h2 {
 
 .education, .bio {
     width: 100%;
+}
+
+.draggable {
+  position: absolute;
+  left: 100px;  
+  top: 300px;
+  cursor: move;
 }
 
 /* .ascii-art {
