@@ -21,7 +21,40 @@ function dragMouseDown(e) {
   }, { once: true });
 }
 
+// // p5.js 部分
+// function setup() {
+//   let canvas = createCanvas(400, 200);
+//   canvas.parent("eyes");
+//   colorMode(HSB);
+//   angleMode(DEGREES);
+// }
 
+// function draw() {
+//   background(255);
 
+//   let leftX = 150;
+//   let leftY = 100;
+//   let leftAngle = atan2(mouseY - leftY, mouseX - leftX);
 
+//   push();
+//   translate(leftX, leftY);
+//   fill(255);
+//   ellipse(0, 0, 50, 50);
+//   rotate(leftAngle);
+//   fill(0);
+//   ellipse(12.5, 0, 25, 25);
+//   pop();
 
+//   let rightX = 250;
+//   let rightY = 100;
+//   let rightAngle = atan2(mouseY - rightY, mouseX - rightX);
+
+//   push();
+//   translate(rightX, rightY);
+//   fill(255);
+//   ellipse(0, 0, 50, 50);
+//   rotate(rightAngle);
+//   fill(0);
+//   ellipse(12.5, 0, 25, 25);
+//   pop();
+// }

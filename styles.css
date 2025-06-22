@@ -1,12 +1,10 @@
+/* 页面基础设置 */
 body {
-
-    background-color: #fff;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    margin: 0;
+  background-color: #fff;
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
 }
 
 /* 顶部导航栏样式 */
@@ -15,62 +13,108 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 1400px;
   text-align: left;
   padding: 10px 20px;
   display: flex;
   gap: 20px;
+  background: #ffffff;
   z-index: 1000;
+  
 }
 
+/* 内容容器 */
 .container {
-    width: 100%;
-    max-width: 1400px;
-    text-align: left;
+  width: 100%;
+  max-width: 1400px;
+  margin: 80px auto 40px;
 }
 
+/* 标题样式 */
 h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    text-align: left;
+  font-size: 150px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h2 {
-    font-size: 24px;
-    text-align: right;
-    margin-bottom: 20px;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-.divider {
-    width: 100%;
-    border-bottom: 1px dashed black;
-    margin: 20px 0;
+h3 {
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 20px;
+  
 }
 
+.line {
+  height: 1px;
+  background-color: #ddd;
+  margin: 16px 0;
+}
+
+/* 单行排版 */
 .row {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.education, .bio {
-    width: 100%;
+/* 项目卡片排布 */
+.project {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 
+/* 图片区域 */
+.img {
+  width: 220px;
+  height: 120px;
+  background: #f0f0f0;
+  margin-right: 16px;
+}
+
+/* 作品编号+标题 */
+.info {
+  width: 600px; /* 👈 固定宽度 */
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.id {
+  color: #666;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 50px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* 文字描述 */
+.desc {
+  flex: 1;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 拖拽功能块 */
 .draggable {
   position: absolute;
-  left: 100px;  
+  left: 100px;
   top: 300px;
   cursor: move;
 }
 
-/* .ascii-art {
-    width: 48%;
-    text-align: right;
+#eyes {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      /* 垂直居中（如果高度允许） */
+  margin: 20px 0;
 }
-
-section.ascii-art pre {
-    font-size: 12px;
-    line-height: 1.4;
-    white-space: pre-wrap;
-    overflow-x: auto;
-} */
